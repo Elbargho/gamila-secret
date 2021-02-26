@@ -1,0 +1,359 @@
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Marck+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Baumans' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'>
+<style type="text/css">
+body {
+	background-image: url(media/background.jpg);
+	background-size: auto;
+}
+ul#menu li a, p, li {
+	font-family: calibri;
+}
+p{
+	font-size: 20px;
+	padding: 0px 20px 15px 15px;
+}
+#header {
+	background-color: rgb(232, 232, 232);
+	height: 212px;
+	width: 95%;
+    position: absolute;
+    top:0;
+	right: 0;
+    left: 0;
+	-webkit-box-shadow: 0px 2px 10px 0px #202020;
+    margin: auto;
+}
+#logo {
+	width: 120px;
+	height: 130px;
+	margin-left: 5px;	
+	margin-top: 10px;
+}
+#header-text1{
+	font-family: 'Marck Script', cursive;
+	font-size: 30px;
+	margin-top: -80px;
+	margin-left: 130px;
+}
+#header-box1 {
+	width: 230px;
+	height: 35px;
+	background-color: #1EAECE;
+	font-family: 'Baumans', cursive;
+	font-weight: bold;
+	text-align: center;
+	line-height: 35px;
+	margin-top: 5px;
+	font-size: 15px;
+	float: right;
+}
+.header-box2 {
+	width: 180px;
+	height: 35px;
+	font-family: 'Baumans', cursive;
+	font-weight: bold;
+	text-align: center;
+	line-height: 35px;
+	font-size: 15px;
+	float: right;
+}
+.bluebox{
+	background-color: #1EAECE;
+	vertical-align: top;
+}
+.orangebox{
+	background-color: #FF8800;
+}
+.title{
+	font-family: 'Josefin Slab', serif;
+	padding: 15px 0px 0px 15px;
+	line-height: 20px;
+	font-size: 34px;
+	font-weight: bold;
+}
+.tick {
+	float: right;
+	width: 25px;
+	height: 23px;
+}
+#menuborders1 {  
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 6px;
+	bottom: 6px;
+	border-top: 3px solid rgb(30, 174, 206);
+	border-bottom: 3px solid rgb(30, 174, 206);
+}
+#menuborders2 { 
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	top: 5px;
+	bottom: 5px;
+	border-top: 1px solid rgb(255, 136, 0);
+	border-bottom: 1px solid rgb(255, 136, 0);
+}
+ul#menu {
+    margin-top: 180px;
+    white-space: nowrap;
+	position: relative;
+	width: 100%;
+	height: 32px;
+	left: -48px;
+	background-color: rgb(25, 25, 25);
+    text-align: center;
+	line-height: 1px;
+}
+ul#menu li {
+    display: inline-block;
+	margin-right: -14px;
+}
+ul#menu li a {
+	position: relative;
+	text-decoration: none;
+	padding: 3px 55px 5px 55px;
+	margin: 0px -13px 0px 13px;
+	color: #fff;
+	background-color: rgb(25, 25, 25);
+}
+ul#menu li.current a {
+	color: rgb(25, 25, 25);
+	background-color: #1EAECE;
+}
+ul#menu li:not(.current) a:hover {
+    color: rgb(25, 25, 25);
+	background-color: #FF8800;
+}
+ul{
+	padding-right: 16px;
+}
+li {
+	list-style-type: square;
+	font-size: 20px;
+}
+#content{
+	margin: auto;
+	width: 90%;
+	margin-top: 8px;
+}
+#slideshow { 
+	margin: auto;
+	position: relative;
+	width: 90%;
+	height: 320px;
+	border: 3px solid #e8e8e8;
+	box-shadow: 0 7px 10px -7px #202020;
+	border-bottom: 25px solid #e8e8e8;
+	background-color:rgba(0,0,0,0.8);
+}
+#slideshow > div { 
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+#ul {
+	position: absolute;
+	bottom: -19px;
+	width: 100%;
+	text-align: center;
+}
+#ul li {
+	list-style-type: none;
+	border-radius: 6px;
+	width: 7px;
+	height: 7px;
+	border: 3px solid #b9b9b9;
+	background: #b9b9b9;
+	margin-left: 5px;
+	cursor: pointer;
+	display: inline-block;
+}
+#ul li.active {
+    background: rgb(25, 25, 25);
+}
+.slideshowimg {
+    width: 100%;
+    height: 100%;
+	background-repeat: no-repeat;
+}
+</style>
+</head>
+<body>
+<div id="header">
+	<div id="header-box1">FREE WROLDWIDE SHIPPING</div>
+	<img src="media/tick.png" class="tick" style="margin: 10px -10px 0px -15px;">
+	<div class="header-box2 orangebox" style="margin: 45px -230px 0px 0px;">SAME DAY SHIPPING</div>
+	<img src="media/tick.png" class="tick" style="margin: 52px -60px 0px -15px;">
+	<div class="header-box2 bluebox" style="margin: 85px -230px 0px 0px;">RETURNS ACCEPTED</div>
+	<img src="media/tick.png" class="tick" style="margin: 92px -60px 0px -15px;">
+	<img id="logo" src="media/gamila-secret-logo.png" />
+	<p id="header-text1">Raised by Nature, gathered by<br>&nbsp;&nbsp;&nbsp;Gamila, to nourish healthy skin</p>
+</div>
+<ul id="menu">
+	<div id="menuborders1">
+	<div id="menuborders2">
+		<li class="current"><a href="#" data-id="div1">Description</a></li>
+		<li><a href="#" data-id="div2">Shipping and payment</a></li>
+		<li><a href="#" data-id="div3">Returns</a></li>
+		<li><a href="#" data-id="div4">Feedback</a></li>
+	</div>
+	</div>
+</ul>
+<div id="slideshow">
+	<div>
+		<div class="slideshowimg" style="background-image: url('media/slideshow-img-1.jpg'); background-position: center"></div>
+	</div>
+	<div>
+		<div class="slideshowimg" style="background-image: url('media/slideshow-img-2.jpg'); background-position: center -105px"></div>
+	</div>
+	<div>
+		<div class="slideshowimg" style="background-image: url('media/slideshow-img-3.jpg'); background-position: center -100px"></div>
+	</div>
+	<div>
+		<div class="slideshowimg" style="background-image: url('media/slideshow-img-4.jpg'); background-position: center -175px"></div>
+	</div>
+	<div>
+		<div class="slideshowimg" style="background-image: url('media/slideshow-img-5.jpg'); background-position: center -75px"></div>
+	</div>	
+	<div>
+		<div class="slideshowimg" style="background-image: url('media/slideshow-img-6.jpg'); background-position: center -215px"></div>
+	</div>
+	<span id="ul"></span>
+</div>
+<div id="content">
+	<div class="subcontent" id="div1">
+		<div class="orangebox">
+			<div class="title">About</div>
+			<p>Gamila Secret cleansing bars not only cleanse and revitalise the skin, they also soften and nourish the skin and help to restore its natural balance.<br>
+			They refine the structure of the skin, and the facial pores while regulating the skin's hydration balance.<br>
+			The cleansing bars are made of 100% natural handmade blend of six pure plant oils combined with Gamila's secret herbal formula.<br>
+			Gamila Secret cleansing bars are available in ten varieties, nine of which have essential oils added and properties that stimulate the skin of different types.<br>
+			You can describe Gamila Secret as a dried cream to wash your whole body with, but with the effects of a high quality cream.<br><br>
+
+			Effective treatment: psoriasis, acne, fungus, scabies, prelude, dandruff, hair loss, hemorrhoids and
+			vaginal problems.</p>
+		</div>
+		<div style="margin-top: -13px;width: 100%;display: table;">
+		<div class="bluebox" style="display: table-cell;">
+			<div class="title">Usage</div>
+			<ul>
+				<li>Moisten with warm water to activate the ingredients.</li>
+				<li>Apply the bar directly on face & body.</li>
+				<li>Massage the creamy texture into your skin.</li>
+				<li>Allow the emulsion time to permeate into the skin.</li>
+				<li>Rinse off.</li>
+			</ul>
+			<p>Suitable for Face wash, Body wash, Shaving, Sensitive areas, Intimate parts, Shower & Bath.</p>
+		</div>
+		<div style="display: table-cell;width: 0.7%;"></div>
+		<div class="orangebox" style="display: table-cell;">
+			<video width="419" src="media/Gamila%20Secret%20Cleansing%20bars%20-%20see%20how%20they%20are%20made.mp4" controls style="padding: 5px 5px 5px 5px; display: flex;"></video>
+		</div>
+		</div>
+	</div>
+	<div class="subcontent" id="div2">
+		<div style="width: 100%;display: table;">
+			<div class="orangebox" style="display: table-cell;">
+				<div class="title">Shipping</div>
+				<ul>
+					<li>Item will be shipped from Palestine within 48 hours after receiving full payment, with tracking information that will be provided to you.</li>
+					<li>All products are checked and packaged well before dispatch.</li>
+					<li>We ship the soap with its Gamila Secret original box.</li>
+					<li>We ship worldwide by Palastine postal. This international order may take longer to arrive, Normally the shipment to worldwide is used to take 18 to 35 business days.</li>
+					<li>If you have not received your shipment within 35 days from payment, please contact us IMMEDIATELY. We will track the shipment and get back to you as soon as possible with a reply.</li>
+				</ul>
+			</div>
+			<div style="display: table-cell;width: 0.7%;"></div>
+			<div class="bluebox" style="display: table-cell;">
+				<div class="title">Payment</div>
+				<ul>
+					<li>We only accept payments via paypal.</li>
+					<li>Payment must be made within 4 days upon auction end, otherwise an unpaid case will be opened</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="subcontent" id="div3">
+		<div class="bluebox" style="padding-bottom: 1px;">
+			<div class="title">Returns</div>
+			<ul>
+				<li>Always contact us before returning any item telling us why you want to return it. If we accept the returning of the item please make sure to ship it <b>with</b> tracking number and give it to us.</li>
+				<li>Returns are accepted 14 days after buyer delivery. If item is in your possession more than 14 days, it is considered as used and we will not issue you a refund or replacement.</li>
+				<li>All returned items must be as buyer received it <b>with</b> the original Gamila Secret box, and the buyer ID provided with it.</li>
+				<li>Full refund will be given immediately after receiving the returned item.</li>
+			</ul>
+		</div>
+	</div>
+	<div class="subcontent" id="div4">
+		<div class="orangebox">
+			<div class="title">Feedback</div>
+			<p>Our goal is to make sure you are happy and satisfied for shopping from us.
+			We are always working for getting positive feedback, we ship items quickly, give the best service to the buyers, and we are extremely happy when you leave 5 stars feedback, make sure you do.
+			If you have any question, enquiry or facing any problem do not hesitate to contact us and we will respond during the day.</p>
+		</div>	
+		<div class="bluebox" style="padding-bottom: 15px;margin-top: -13px;">
+			<div class="title">Recent feedback</div>
+			<link rel="stylesheet" type="text/css" href="feedback-style.css">
+			<script type="text/javascript" src="http://www.pc-homecare.co.uk/ebay/feedback.php?id=buy&site=&seller=[SELLER]"></script>
+		</div>
+	</div>
+</div>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function () {
+    $('.subcontent:gt(0)').hide();
+    $('#menu').on('click', 'li:not(.current) a', function (e) {
+        e.preventDefault();
+        $('.current').not($(this).closest('li').addClass('current')).removeClass('current');
+        $('.subcontent:visible').hide(600);
+        $('.subcontent[id=' + $(this).attr('data-id') + ']').show(600);
+    });
+});
+
+$("#slideshow > div:gt(0)").hide();
+
+var maxindex = $('#slideshow > div').length;
+
+var index = 0
+var interval = 8000;
+var timerJob = setInterval(traverseSlideShow, interval);
+
+function traverseSlideShow() {
+    console.log("current index: " + index);
+	    
+    $('#slideshow > div')
+        .stop()
+        .fadeOut(1000);
+    $('#slideshow > div').eq(index)
+        .stop()
+        .fadeIn(1000);
+    
+    $('#ul li').removeClass('active');
+    $('#ul li:eq(' + index + ')').addClass('active');
+    index = (index < maxindex - 1) ? index + 1 : 0;
+    
+    $('#ul li').removeClass('enable');
+    setTimeout(function(){
+        $('#ul li').addClass('enable');
+    }, 1000);
+}
+
+for (var i = 0; i < maxindex; i++) {
+    $('#ul').append('<li class="' + (i == 0 ? 'active' : '') + ' enable"></li>');
+}
+
+$(document).on('click', '#ul li.enable', function () {
+    index = $(this).index();
+    traverseSlideShow();
+    clearInterval(timerJob);
+    timerJob = setInterval(traverseSlideShow, interval);
+});
+</script>
+</body>
+</html>

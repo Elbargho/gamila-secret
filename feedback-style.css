@@ -1,0 +1,60 @@
+#eBayFeedback{
+	border: 15px solid #eee;
+	padding: 15px;
+	margin: 22px 15px 0px 15px;
+}
+#eBayVerify{
+	display: none;
+}
+#eBaySponsor{
+	display: none;
+}
+.eBayFeedbackComments li{
+	background: url(file:///D:/Desktop/Gamila%20Secret/positive-feedback.png) left top no-repeat;
+	padding-left: 25px;
+	white-space: nowrap;
+	overflow: hidden;
+	margin-bottom: 6px;
+	font-family: calibri;
+	font-size: 15px;
+}
+.eBayHeader
+{
+	width: 100%;
+	height: 31px;
+	border: #99A solid 1px;
+	font-family: calibri;
+	font-size: 14px;
+	font-weight: bold;
+    padding: 0px;
+    margin-bottom: 5px;
+}
+.eBayHeader th
+{
+    background: url(file:///D:/Desktop/Gamila%20Secret/ebay-logo.png) no-repeat;
+	width: 54px;
+	background-size: 38px 15px;
+	background-position: center;
+	background-color: #eee;
+}
+.eBayHeader td
+{
+	color: #0654ba;
+    border: none;
+	padding: 0px 5px;
+	background-color: #eee;
+}
+.eBayTopSeller{
+	display: none;
+}
+.eBayFeedbackComments
+{
+	list-style-type: none;
+	padding: 0px;
+	margin: 23px 5px 0px 5px;
+	background: url(file:///C:/Users/Abdallah/Desktop/ebay-top-rated-seller1.png);
+	background-size: 75px 100px;
+	background-repeat: no-repeat;
+	background-position: right;
+	background-position-y: 5px;
+}
